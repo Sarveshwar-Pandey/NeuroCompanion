@@ -52,7 +52,7 @@
     # Official Neuro-SAN basic AAOSA substitutions.
     # The Studio documentation recommends aaosa_basic.hocon for the core AAOSA
     # contract because it avoids extra behaviors that can complicate routing.
-    include "registries/aaosa_basic.hocon"
+    include "registries/aaosa.hocon"
 
     "instructions_prefix": """
 You are a component of Neuro Companion, a trustworthy personal cognitive-support system.

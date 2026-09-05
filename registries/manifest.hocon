@@ -52,5 +52,9 @@
     "neuro_companion_smoked.hocon": {
     "serve": true,
     "public": true
-}
+    },
+    "neuro_companion_phase2.hocon": {
+    "serve": true,
+    "public": true
+    }
 }
