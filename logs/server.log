@@ -1,0 +1,1246 @@
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=3988)
+[ProcessLogBridgePlugin] Initialized (PID=3988)
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 25.33 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.044850", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.069846", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44925 bytes): 2330323163408", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070030", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070136", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2330323182864", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070202", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070285", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26433 bytes): 2330323415312", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070346", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070420", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25489 bytes): 2330323279056", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070483", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070545", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7962 bytes): 2330323275712", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070602", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070661", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31191 bytes): 2330322746768", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070719", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070780", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25750 bytes): 2330323504128", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070839", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070902", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12855 bytes): 2330323504400", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.070963", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=3988)", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.100155", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.146760", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.146914", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 1022708 requests", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.147015", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.147098", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.147170", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.147241", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.150496", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.150860", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.152826", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.153154", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.153526", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.157259", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T08:28:35.158013", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:28:44.492637", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/list (::1) 4.33ms", "user_id": "None", "Timestamp": "2026-09-05T08:28:44.494069", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:28:44.494205", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.770665", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.770947", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Agent network 'agent_network_designer' (ID: 2330323415312) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.771096", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.771385", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 2226.54ms", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.772753", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.772899", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.895717", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.895912", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Agent network 'agent_network_designer' (ID: 2330323415312) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.896022", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.896235", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 4.27ms", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.896876", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:28:54.897028", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Start agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.285174", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Received a agent_network_designer.StreamingChat request for 'ho'", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.285616", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Agent network 'agent_network_designer' (ID: 2330323415312) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.294078", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Agent network 'agent_network_editor' (ID: 2330322746768) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.302028", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Agent network 'agent_network_query_generator' (ID: 2330323275712) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.305791", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Agent network 'agent_network_instructions_editor' (ID: 2330323279056) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:03.308110", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Request reporting: {
+    "token_accounting": {
+        "total_tokens": 1585,
+        "prompt_tokens": 1072,
+        "completion_tokens": 513,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.002075,
+        "time_taken_in_seconds": 4.0438385009765625,
+        "caveats": [
+            "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ]
+    },
+    "total_token_accounting": {
+        "total_tokens": 1585,
+        "prompt_tokens": 1072,
+        "completion_tokens": 513,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.002075,
+        "time_taken_in_seconds": 4.0438385009765625,
+        "caveats": [
+            "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ],
+        "models": {
+            "gemini": {
+                "gemini-3-flash-preview": {
+                    "total_tokens": 1585,
+                    "prompt_tokens": 1072,
+                    "completion_tokens": 513,
+                    "successful_requests": 1,
+                    "empty_responses": 0,
+                    "total_cost": 0.002075,
+                    "time_taken_in_seconds": 4.022984981536865
+                }
+            }
+        }
+    }
+}", "user_id": "None", "Timestamp": "2026-09-05T08:29:08.253988", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Done with agent_network_designer.StreamingChat request for 'ho'", "user_id": "None", "Timestamp": "2026-09-05T08:29:08.254276", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] 200 POST /api/v1/agent_network_designer/streaming_chat (::1) 4970.94ms", "user_id": "None", "Timestamp": "2026-09-05T08:29:08.254684", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Finish agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:08.254818", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 4, '/api/v1/list': 1, 'agent_network_designer/connectivity': 2, 'agent_network_designer/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-05T08:29:08.254890", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Start agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.019817", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Received a agent_network_designer.StreamingChat request for '2+2?'", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.020308", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Agent network 'agent_network_designer' (ID: 2330323415312) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.033725", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Agent network 'agent_network_editor' (ID: 2330322746768) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.037089", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Agent network 'agent_network_query_generator' (ID: 2330323275712) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.044175", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Agent network 'agent_network_instructions_editor' (ID: 2330323279056) used for operation: function", "user_id": "None", "Timestamp": "2026-09-05T08:29:56.045637", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Request reporting: {
+    "token_accounting": {
+        "total_tokens": 1338,
+        "prompt_tokens": 1134,
+        "completion_tokens": 204,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.001179,
+        "time_taken_in_seconds": 2.646885395050049,
+        "caveats": [
+            "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ]
+    },
+    "total_token_accounting": {
+        "total_tokens": 1338,
+        "prompt_tokens": 1134,
+        "completion_tokens": 204,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.001179,
+        "time_taken_in_seconds": 2.646885395050049,
+        "caveats": [
+            "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ],
+        "models": {
+            "gemini": {
+                "gemini-3-flash-preview": {
+                    "total_tokens": 1338,
+                    "prompt_tokens": 1134,
+                    "completion_tokens": 204,
+                    "successful_requests": 1,
+                    "empty_responses": 0,
+                    "total_cost": 0.001179,
+                    "time_taken_in_seconds": 2.621320962905884
+                }
+            }
+        }
+    }
+}", "user_id": "None", "Timestamp": "2026-09-05T08:29:58.895350", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Done with agent_network_designer.StreamingChat request for '2+2?'", "user_id": "None", "Timestamp": "2026-09-05T08:29:58.895552", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] 200 POST /api/v1/agent_network_designer/streaming_chat (::1) 2877.76ms", "user_id": "None", "Timestamp": "2026-09-05T08:29:58.895875", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Finish agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:29:58.896002", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 5, '/api/v1/list': 1, 'agent_network_designer/connectivity': 2, 'agent_network_designer/streaming_chat': 2}", "user_id": "None", "Timestamp": "2026-09-05T08:29:58.896066", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.641835", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.642781", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2330323182864) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.642926", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.643074", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 2357.27ms", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.644509", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.644633", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.666402", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.666549", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2330323182864) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.666624", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.666747", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 4.96ms", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.670980", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-05T08:30:06.671169", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Start basic/music_nerd/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:30:25.020178", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Received a basic/music_nerd.StreamingChat request for 'Suggest some good soothing hindi music'", "user_id": "None", "Timestamp": "2026-09-05T08:30:25.021120", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2330323182864) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:30:25.022581", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Request reporting: {
+    "token_accounting": {
+        "total_tokens": 2319,
+        "prompt_tokens": 232,
+        "completion_tokens": 2087,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.006377000000000001,
+        "time_taken_in_seconds": 12.179541110992432,
+        "caveats": [
+            "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ]
+    },
+    "total_token_accounting": {
+        "total_tokens": 2319,
+        "prompt_tokens": 232,
+        "completion_tokens": 2087,
+        "successful_requests": 1,
+        "empty_responses": 0,
+        "total_cost": 0.006377000000000001,
+        "time_taken_in_seconds": 12.179541110992432,
+        "caveats": [
+            "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ],
+        "models": {
+            "gemini": {
+                "gemini-3-flash-preview": {
+                    "total_tokens": 2319,
+                    "prompt_tokens": 232,
+                    "completion_tokens": 2087,
+                    "successful_requests": 1,
+                    "empty_responses": 0,
+                    "total_cost": 0.006377000000000001,
+                    "time_taken_in_seconds": 12.175395250320435
+                }
+            }
+        }
+    }
+}", "user_id": "None", "Timestamp": "2026-09-05T08:30:37.326579", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Done with basic/music_nerd.StreamingChat request for 'Suggest some good soothing hindi music'", "user_id": "None", "Timestamp": "2026-09-05T08:30:37.326787", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] 200 POST /api/v1/basic/music_nerd/streaming_chat (::1) 12310.34ms", "user_id": "None", "Timestamp": "2026-09-05T08:30:37.327138", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Finish basic/music_nerd/streaming_chat", "user_id": "None", "Timestamp": "2026-09-05T08:30:37.327256", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 8, '/api/v1/list': 1, 'agent_network_designer/connectivity': 2, 'agent_network_designer/streaming_chat': 2, 'basic/music_nerd/connectivity': 2, 'basic/music_nerd/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-05T08:30:37.327322", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=6420)
+[ProcessLogBridgePlugin] Initialized (PID=6420)
+Manifest entry for neuro_companion_smoked.hocon in file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon must be either a boolean or a dictionary. Skipping.
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 24.58 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.055591", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.105388", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26441 bytes): 2149979722272", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.105589", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.105919", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44949 bytes): 2149978878800", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.107169", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.109729", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2149979092512", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.109913", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.113051", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31207 bytes): 2149979465808", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114411", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114601", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25790 bytes): 2149979057200", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114692", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114760", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25505 bytes): 2149979468368", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114816", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.114878", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7986 bytes): 2149979718320", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.115116", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.115318", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12911 bytes): 2149978523584", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.115408", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=6420)", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.190677", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.203765", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.203913", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 1062680 requests", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.203992", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.204065", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.204138", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.204208", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.212828", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.213355", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.217555", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.217914", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.218459", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.221196", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T08:53:34.222234", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:54:47.610532", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/list (::1) 6.03ms", "user_id": "None", "Timestamp": "2026-09-05T08:54:47.614640", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:54:47.614800", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 51, in on_modified
+    self.handle_event(RegistryChangeHandler.MODIFIED, event.src_path)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('modified', 'C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon')
+{"message": "Observed events: modified 1, added 0, deleted 0", "user_id": "None", "Timestamp": "2026-09-05T08:55:29.222472", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Updating manifest file: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-05T08:55:29.223089", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=6420, pipe_handle=596)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    _fixup_main_from_name(data['init_main_from_name'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    main_content = runpy.run_module(mod_name,
+                                    run_name="__mp_main__",
+                                    alter_sys=True)
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 39, in <module>
+    from neuro_san.internals.interfaces.context_type_toolbox_factory import ContextTypeToolboxFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\interfaces\context_type_toolbox_factory.py", line 23, in <module>
+    from langchain_core.tools import BaseTool
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\__init__.py", line 89, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\base.py", line 42, in <module>
+    from langchain_core.callbacks import (
+    ...<3 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\callbacks\__init__.py", line 126, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\callbacks\manager.py", line 31, in <module>
+    from langchain_core.messages import BaseMessage, get_buffer_string
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\messages\__init__.py", line 6, in <module>
+    from langchain_core.utils.utils import LC_AUTO_PREFIX, LC_ID_PREFIX, ensure_id
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\utils\utils.py", line 16, in <module>
+    from requests import HTTPError, Response
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\requests\__init__.py", line 45, in <module>
+    import urllib3
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\urllib3\__init__.py", line 15, in <module>
+    from ._base_connection import _TYPE_BODY
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+{"message": "Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon could not be restored.", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.157776", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\persistence\registry_manifest_restorer.py", line 181, in restore_one_manifest
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+    for result in results:
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+                  ^^^^^^^
+KeyboardInterrupt
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+  File "<string>", line 1, in <module>
+    for element in iterable:
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=6420, pipe_handle=876)
+                   ^^^^^^^^
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    yield _result_or_cancel(fs.pop())
+    exitcode = _main(fd, parent_sentinel)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+    prepare(preparation_data)
+    return fut.result(timeout)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 454, in result
+    _fixup_main_from_name(data['init_main_from_name'])
+    return self.__get_result()
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    raise self._exception
+    main_content = runpy.run_module(mod_name,
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+                                    run_name="__mp_main__",
+{"message": "Removed agent agent_network_designer from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212605", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                    alter_sys=True)
+{"message": "REMOVED network for agent agent_network_designer : 2149979722272", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212722", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 231, in run_module
+{"message": "Removed agent agent_network_test_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212800", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 98, in _run_module_code
+{"message": "REMOVED network for agent agent_network_test_generator : 2149978878800", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212862", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 88, in _run_code
+{"message": "Removed agent basic/music_nerd from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212920", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+{"message": "REMOVED network for agent basic/music_nerd : 2149979092512", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.212976", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+{"message": "Removed agent agent_network_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213043", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent agent_network_editor : 2149979465808", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213103", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+{"message": "Removed agent agent_network_instructions_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213162", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+{"message": "REMOVED network for agent agent_network_instructions_editor : 2149979468368", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213219", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+{"message": "Removed agent experimental/cruse_theme_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213275", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+{"message": "REMOVED network for agent experimental/cruse_theme_agent : 2149979057200", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213329", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+{"message": "Removed agent agent_network_query_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213387", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+{"message": "REMOVED network for agent agent_network_query_generator : 2149979718320", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213444", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+Traceback (most recent call last):
+{"message": "Removed agent experimental/cruse_widget_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213504", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REMOVED network for agent experimental/cruse_widget_agent : 2149978523584", "user_id": "None", "Timestamp": "2026-09-05T08:55:32.213562", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=5288)
+[ProcessLogBridgePlugin] Initialized (PID=5288)
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 23.14 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.612293", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615607", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2322677626736", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615739", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615821", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26441 bytes): 2322678271632", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615881", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615943", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44949 bytes): 2322677802640", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.615995", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616058", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7986 bytes): 2322495084880", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616110", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616176", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25790 bytes): 2322677591088", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616250", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent neuro_companion_smoked to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616318", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_smoked (110098 bytes): 2322677178448", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616381", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616447", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31207 bytes): 2322495093840", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616505", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616565", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12903 bytes): 2322677804544", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616623", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616689", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25513 bytes): 2322678275888", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.616750", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=5288)", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.621983", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628152", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628310", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 940915 requests", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628402", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628550", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628633", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.628702", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.630751", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.631100", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.633010", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.633617", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.634017", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.636510", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T08:56:11.637255", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:56:45.298420", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/list (::1) 2.37ms", "user_id": "None", "Timestamp": "2026-09-05T08:56:45.299733", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T08:56:45.299855", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "200 GET / (::1) 4.54ms", "user_id": "None", "Timestamp": "2026-09-05T08:57:22.286332", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] 404 GET /favicon.ico (::1) 0.50ms", "user_id": "None", "Timestamp": "2026-09-05T08:57:22.370056", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "[0] Start /api/v1/docs", "user_id": "None", "Timestamp": "2026-09-05T08:57:35.026504", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/docs (::1) 2.20ms", "user_id": "None", "Timestamp": "2026-09-05T08:57:35.027478", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish /api/v1/docs", "user_id": "None", "Timestamp": "2026-09-05T08:57:35.027736", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 51, in on_modified
+    self.handle_event(RegistryChangeHandler.MODIFIED, event.src_path)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('modified', 'C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon')
+{"message": "Observed events: modified 1, added 0, deleted 0", "user_id": "None", "Timestamp": "2026-09-05T09:00:01.694107", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Updating manifest file: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-05T09:00:01.694280", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=5288, pipe_handle=872)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    _fixup_main_from_name(data['init_main_from_name'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    main_content = runpy.run_module(mod_name,
+                                    run_name="__mp_main__",
+                                    alter_sys=True)
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 39, in <module>
+    from neuro_san.internals.interfaces.context_type_toolbox_factory import ContextTypeToolboxFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\interfaces\context_type_toolbox_factory.py", line 23, in <module>
+    from langchain_core.tools import BaseTool
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\__init__.py", line 89, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\base.py", line 48, in <module>
+    from langchain_core.runnables import (
+    ...<5 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\runnables\__init__.py", line 130, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 95, in <module>
+    from langchain_core.tracers.root_listeners import (
+    ...<2 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+{"message": "Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon could not be restored.", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.271845", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\persistence\registry_manifest_restorer.py", line 181, in restore_one_manifest
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+    for result in results:
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+                  ^^^^^^^
+KeyboardInterrupt
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+Traceback (most recent call last):
+    for element in iterable:
+  File "<string>", line 1, in <module>
+                   ^^^^^^^^
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=5288, pipe_handle=868)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    yield _result_or_cancel(fs.pop())
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    return fut.result(timeout)
+    prepare(preparation_data)
+           ~~~~~~~~~~^^^^^^^^^
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 454, in result
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    return self.__get_result()
+    _fixup_main_from_name(data['init_main_from_name'])
+           ~~~~~~~~~~~~~~~~~^^
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    raise self._exception
+    main_content = runpy.run_module(mod_name,
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+                                    run_name="__mp_main__",
+{"message": "Removed agent basic/music_nerd from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.277906", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                    alter_sys=True)
+{"message": "REMOVED network for agent basic/music_nerd : 2322677626736", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278045", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 231, in run_module
+{"message": "Removed agent agent_network_designer from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278135", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 98, in _run_module_code
+{"message": "REMOVED network for agent agent_network_designer : 2322678271632", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278201", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen runpy>", line 88, in _run_code
+{"message": "Removed agent agent_network_test_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278286", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+{"message": "REMOVED network for agent agent_network_test_generator : 2322677802640", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278348", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+{"message": "Removed agent experimental/cruse_theme_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278426", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent experimental/cruse_theme_agent : 2322677591088", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278490", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+{"message": "Removed agent agent_network_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278555", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+{"message": "REMOVED network for agent agent_network_editor : 2322495093840", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278613", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+{"message": "Removed agent agent_network_instructions_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278675", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+{"message": "REMOVED network for agent agent_network_instructions_editor : 2322678275888", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278737", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+{"message": "Removed agent agent_network_query_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278798", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+{"message": "REMOVED network for agent agent_network_query_generator : 2322495084880", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278857", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 39, in <module>
+    from neuro_san.internals.interfaces.context_type_toolbox_factory import ContextTypeToolboxFactory
+{"message": "Removed agent experimental/cruse_widget_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278917", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\interfaces\context_type_toolbox_factory.py", line 23, in <module>
+{"message": "REMOVED network for agent experimental/cruse_widget_agent : 2322677804544", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.278975", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from langchain_core.tools import BaseTool
+{"message": "Removed agent neuro_companion_smoked from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.279038", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+{"message": "REMOVED network for agent neuro_companion_smoked : 2322677178448", "user_id": "None", "Timestamp": "2026-09-05T09:00:05.279094", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\__init__.py", line 89, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tools\base.py", line 48, in <module>
+    from langchain_core.runnables import (
+    ...<5 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1431, in _handle_fromlist
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\runnables\__init__.py", line 130, in __getattr__
+    result = import_attr(attr_name, module_name, __spec__.parent)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\_import_utils.py", line 36, in import_attr
+    module = import_module(f".{module_name}", package=package)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 87, in <module>
+    from langchain_core.tracers.event_stream import (
+    ...<2 lines>...
+    )
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\langchain_core\tracers\event_stream.py", line 26, in <module>
+    from langchain_core.runnables.schema import (
+    ...<4 lines>...
+    )
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=16352)
+[ProcessLogBridgePlugin] Initialized (PID=16352)
+manifest registry basic/neuro_companion.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon
+manifest registry neuro_companion_smoked.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 26.03 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.077690", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.081817", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2416407229648", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.081984", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082119", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44949 bytes): 2416407405680", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082214", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082285", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26441 bytes): 2416407859744", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082341", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082436", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25790 bytes): 2416407193232", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082533", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082606", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7986 bytes): 2416224629968", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082667", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082730", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12903 bytes): 2416407410848", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082782", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082836", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25513 bytes): 2416407860656", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082913", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.082992", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31207 bytes): 2416224622928", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.083295", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=16352)", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.088883", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.097687", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.097828", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 1016210 requests", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.097908", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.097980", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.098047", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.098114", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.100142", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.100507", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.102537", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.102859", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.103343", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.106261", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T09:00:47.108013", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/docs", "user_id": "None", "Timestamp": "2026-09-05T09:00:51.673354", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 304 GET /api/v1/docs (::1) 4.92ms", "user_id": "None", "Timestamp": "2026-09-05T09:00:51.676368", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/docs", "user_id": "None", "Timestamp": "2026-09-05T09:00:51.676541", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:01:20.935275", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/list (::1) 2.02ms", "user_id": "None", "Timestamp": "2026-09-05T09:01:20.935916", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:01:20.936044", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=12972)
+[ProcessLogBridgePlugin] Initialized (PID=12972)
+manifest registry basic/neuro_companion.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 20.26 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.288013", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.291755", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2511958947696", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.291944", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292068", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26433 bytes): 2511776445648", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292147", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292226", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44917 bytes): 2511959123056", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292296", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292375", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7962 bytes): 2511959592896", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292439", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292506", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31191 bytes): 2511776438608", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292571", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292633", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25489 bytes): 2511959594416", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292692", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent neuro_companion_smoked to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292755", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_smoked (110066 bytes): 2511958926992", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292811", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292868", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25742 bytes): 2511958434928", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.292945", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.293018", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12847 bytes): 2511958671952", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.293072", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=12972)", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.297541", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303350", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303520", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 1040809 requests", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303611", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303692", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303765", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.303831", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.307723", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.308101", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.310760", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.311038", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.311419", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.313103", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T09:16:17.313511", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:16:24.807263", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/list (::1) 7.27ms", "user_id": "None", "Timestamp": "2026-09-05T09:16:24.812201", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:16:24.812794", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 51, in on_modified
+    self.handle_event(RegistryChangeHandler.MODIFIED, event.src_path)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('modified', 'C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon')
+{"message": "Observed events: modified 1, added 0, deleted 0", "user_id": "None", "Timestamp": "2026-09-05T09:17:12.312986", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Updating manifest file: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-05T09:17:12.313105", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 51, in on_modified
+    self.handle_event(RegistryChangeHandler.MODIFIED, event.src_path)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('modified', 'C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon')
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:17:17.731147", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/list (::1) 2.51ms", "user_id": "None", "Timestamp": "2026-09-05T09:17:17.731818", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-05T09:17:17.731949", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12972, pipe_handle=888)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    _fixup_main_from_name(data['init_main_from_name'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    main_content = runpy.run_module(mod_name,
+                                    run_name="__mp_main__",
+                                    alter_sys=True)
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 48, in <module>
+    from neuro_san.session.async_direct_agent_session import AsyncDirectAgentSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\session\async_direct_agent_session.py", line 34, in <module>
+    from neuro_san.internals.chat.data_driven_chat_session import DataDrivenChatSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\chat\data_driven_chat_session.py", line 40, in <module>
+    from neuro_san.internals.graph.registry.agent_tool_registry import AgentToolRegistry
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\agent_tool_registry.py", line 20, in <module>
+    from neuro_san.internals.graph.registry.activation_factory import ActivationFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\activation_factory.py", line 30, in <module>
+    from neuro_san.internals.graph.activations.front_man_activation import FrontManActivation
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\front_man_activation.py", line 21, in <module>
+    from neuro_san.internals.graph.activations.calling_activation import CallingActivation
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\calling_activation.py", line 31, in <module>
+    from neuro_san.internals.run_context.factory.run_context_factory import RunContextFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\factory\run_context_factory.py", line 25, in <module>
+    from neuro_san.internals.run_context.langchain.core.langchain_run_context import LangChainRunContext
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\langchain_run_context.py", line 56, in <module>
+    from neuro_san.internals.run_context.langchain.core.run_context_runnable import RunContextRunnable
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 56, in <module>
+    RATE_LIMIT_ERROR_TYPES: Tuple[Type[Any], ...] = ResolverUtil.create_type_tuple([
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+                                                "openai.RateLimitError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                                "openrouter.errors.TooManyRequestsResponseError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                             ])
+                                             ^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 173, in create_type_tuple
+    one_type: Type[Any] = ResolverUtil.create_type(class_name,
+                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+                                                   raise_if_not_found=False,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                   install_if_missing=None)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 147, in create_type
+    class_type: Type[Any] = resolver.resolve_class_in_module(class_name,
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+                                                             module_name=module_name,
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+                                                             raise_if_not_found=raise_if_not_found,
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                             install_if_missing=install_if_missing)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 80, in resolve_class_in_module
+    found_module: Any = self._find_module(use_module_name, messages, install_if_missing,
+                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          surface_import_errors=surface_import_errors)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 120, in _find_module
+    return self.try_to_import_module(use_module_name, messages,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                     install_if_missing=install_if_missing,
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                     surface_import_errors=surface_import_errors)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 159, in try_to_import_module
+    found_module = import_module(module)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\__init__.py", line 5, in <module>
+    from . import types
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12972, pipe_handle=752)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\types\__init__.py", line 129, in <module>
+    from .completion_create_params import CompletionCreateParams as CompletionCreateParams
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    _fixup_main_from_name(data['init_main_from_name'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+KeyboardInterrupt
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    main_content = runpy.run_module(mod_name,
+                                    run_name="__mp_main__",
+                                    alter_sys=True)
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 48, in <module>
+    from neuro_san.session.async_direct_agent_session import AsyncDirectAgentSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\session\async_direct_agent_session.py", line 34, in <module>
+    from neuro_san.internals.chat.data_driven_chat_session import DataDrivenChatSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\chat\data_driven_chat_session.py", line 40, in <module>
+    from neuro_san.internals.graph.registry.agent_tool_registry import AgentToolRegistry
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\agent_tool_registry.py", line 20, in <module>
+    from neuro_san.internals.graph.registry.activation_factory import ActivationFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\activation_factory.py", line 30, in <module>
+    from neuro_san.internals.graph.activations.front_man_activation import FrontManActivation
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12972, pipe_handle=1028)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\front_man_activation.py", line 21, in <module>
+    from neuro_san.internals.graph.activations.calling_activation import CallingActivation
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\calling_activation.py", line 31, in <module>
+    from neuro_san.internals.run_context.factory.run_context_factory import RunContextFactory
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\factory\run_context_factory.py", line 25, in <module>
+    from neuro_san.internals.run_context.langchain.core.langchain_run_context import LangChainRunContext
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 244, in prepare
+    _fixup_main_from_name(data['init_main_from_name'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\langchain_run_context.py", line 56, in <module>
+    from neuro_san.internals.run_context.langchain.core.run_context_runnable import RunContextRunnable
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 268, in _fixup_main_from_name
+    main_content = runpy.run_module(mod_name,
+                                    run_name="__mp_main__",
+                                    alter_sys=True)
+  File "<frozen runpy>", line 231, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 56, in <module>
+    RATE_LIMIT_ERROR_TYPES: Tuple[Type[Any], ...] = ResolverUtil.create_type_tuple([
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+                                                "openai.RateLimitError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                                "openrouter.errors.TooManyRequestsResponseError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                             ])
+                                             ^^
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py", line 39, in <module>
+    from neuro_san.service.main_loop.server_main_loop import ServerMainLoop  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 173, in create_type_tuple
+    one_type: Type[Any] = ResolverUtil.create_type(class_name,
+                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+                                                   raise_if_not_found=False,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                   install_if_missing=None)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\main_loop\server_main_loop.py", line 42, in <module>
+    from neuro_san.service.http.server.http_server import DEFAULT_SERVER_NAME
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 147, in create_type
+    class_type: Type[Any] = resolver.resolve_class_in_module(class_name,
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+                                                             module_name=module_name,
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+                                                             raise_if_not_found=raise_if_not_found,
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                             install_if_missing=install_if_missing)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\http\server\http_server.py", line 45, in <module>
+    from neuro_san.service.generic.async_agent_service_provider import AsyncAgentServiceProvider
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service_provider.py", line 27, in <module>
+    from neuro_san.service.generic.async_agent_service import AsyncAgentService
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\generic\async_agent_service.py", line 48, in <module>
+    from neuro_san.session.async_direct_agent_session import AsyncDirectAgentSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\session\async_direct_agent_session.py", line 34, in <module>
+    from neuro_san.internals.chat.data_driven_chat_session import DataDrivenChatSession
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\chat\data_driven_chat_session.py", line 40, in <module>
+    from neuro_san.internals.graph.registry.agent_tool_registry import AgentToolRegistry
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\agent_tool_registry.py", line 20, in <module>
+    from neuro_san.internals.graph.registry.activation_factory import ActivationFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\registry\activation_factory.py", line 30, in <module>
+    from neuro_san.internals.graph.activations.front_man_activation import FrontManActivation
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\front_man_activation.py", line 21, in <module>
+    from neuro_san.internals.graph.activations.calling_activation import CallingActivation
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\activations\calling_activation.py", line 31, in <module>
+    from neuro_san.internals.run_context.factory.run_context_factory import RunContextFactory
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\factory\run_context_factory.py", line 25, in <module>
+    from neuro_san.internals.run_context.langchain.core.langchain_run_context import LangChainRunContext
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\langchain_run_context.py", line 56, in <module>
+    from neuro_san.internals.run_context.langchain.core.run_context_runnable import RunContextRunnable
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 80, in resolve_class_in_module
+    found_module: Any = self._find_module(use_module_name, messages, install_if_missing,
+                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          surface_import_errors=surface_import_errors)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 56, in <module>
+    RATE_LIMIT_ERROR_TYPES: Tuple[Type[Any], ...] = ResolverUtil.create_type_tuple([
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+                                                "openai.RateLimitError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                                "openrouter.errors.TooManyRequestsResponseError",
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                             ])
+                                             ^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 120, in _find_module
+    return self.try_to_import_module(use_module_name, messages,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon could not be restored.", "user_id": "None", "Timestamp": "2026-09-05T09:17:25.999547", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+                                     install_if_missing=install_if_missing,
+Traceback (most recent call last):
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\internals\graph\persistence\registry_manifest_restorer.py", line 181, in restore_one_manifest
+                                     surface_import_errors=surface_import_errors)
+    for result in results:
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  ^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 159, in try_to_import_module
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+    found_module = import_module(module)
+    for element in iterable:
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 173, in create_type_tuple
+                   ^^^^^^^^
+    one_type: Type[Any] = ResolverUtil.create_type(class_name,
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+    yield _result_or_cancel(fs.pop())
+                                                   raise_if_not_found=False,
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+                                                   install_if_missing=None)
+    return fut.result(timeout)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 454, in result
+    return _bootstrap._gcd_import(name[level:], package, level)
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\__init__.py", line 8, in <module>
+           ~~~~~~~~~~~~~~~~~^^
+    from ._client import (
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+    ...<9 lines>...
+    raise self._exception
+    )
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\_client.py", line 33, in <module>
+{"message": "Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 13.69 seconds.", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.005220", "source": "HttpServer", "message_type": "Warning", "request_id": "None"}
+    from ._base_client import (
+{"message": "Removed agent basic/music_nerd from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.005661", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    ...<4 lines>...
+{"message": "REMOVED network for agent basic/music_nerd : 2511958947696", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.005806", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    )
+{"message": "Removed agent agent_network_designer from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.005892", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver_util.py", line 147, in create_type
+{"message": "REMOVED network for agent agent_network_designer : 2511776445648", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.005958", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    class_type: Type[Any] = resolver.resolve_class_in_module(class_name,
+{"message": "Removed agent agent_network_test_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006024", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+{"message": "REMOVED network for agent agent_network_test_generator : 2511959123056", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006094", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             module_name=module_name,
+{"message": "Removed agent agent_network_query_generator from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006176", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent agent_network_query_generator : 2511959592896", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006248", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             raise_if_not_found=raise_if_not_found,
+{"message": "Removed agent agent_network_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006321", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent agent_network_editor : 2511776438608", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006427", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             install_if_missing=install_if_missing)
+{"message": "Removed agent experimental/cruse_theme_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006508", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent experimental/cruse_theme_agent : 2511958434928", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006600", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\_base_client.py", line 105, in <module>
+{"message": "Removed agent agent_network_instructions_editor from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006683", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    from ._utils._json import openapi_dumps
+{"message": "REMOVED network for agent agent_network_instructions_editor : 2511959594416", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006756", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+{"message": "Removed agent experimental/cruse_widget_agent from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006826", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 80, in resolve_class_in_module
+{"message": "REMOVED network for agent experimental/cruse_widget_agent : 2511958671952", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006899", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+    found_module: Any = self._find_module(use_module_name, messages, install_if_missing,
+{"message": "Removed agent neuro_companion_smoked from allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.006972", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "REMOVED network for agent neuro_companion_smoked : 2511958926992", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.007044", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                          surface_import_errors=surface_import_errors)
+{"message": "Observed events: modified 1, added 0, deleted 0", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.080483", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{"message": "Updating manifest file: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-05T09:17:26.080604", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 120, in _find_module
+    return self.try_to_import_module(use_module_name, messages,
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                     install_if_missing=install_if_missing,
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                     surface_import_errors=surface_import_errors)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12972, pipe_handle=892)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\leaf_common\resolution\resolver.py", line 159, in try_to_import_module
+    found_module = import_module(module)
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\__init__.py", line 5, in <module>
+    from . import types
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\types\__init__.py", line 64, in <module>
+    from .tool_union_param import ToolUnionParam as ToolUnionParam
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\types\tool_union_param.py", line 19, in <module>
+    from .computer_toolset_20260801_param import ComputerToolset20260801Param
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\types\computer_toolset_20260801_param.py", line 9, in <module>
+    from .computer_toolset_configs_param import ComputerToolsetConfigsParam
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\anthropic\types\computer_toolset_configs_param.py", line 17, in <module>
+    from .computer_right_click_config_param import ComputerRightClickConfigParam
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=1604)
+[ProcessLogBridgePlugin] Initialized (PID=1604)
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries\manifest.hocon restored in 25.35 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.870034", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.875294", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2487797757472", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.875503", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent neuro_companion_smoked to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.875605", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_smoked (110098 bytes): 2487797485136", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876283", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876454", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44949 bytes): 2487797927456", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876537", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876613", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26441 bytes): 2487797910880", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876679", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876760", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25790 bytes): 2487797939424", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876821", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876882", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25513 bytes): 2487797911792", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876937", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.876992", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31207 bytes): 2487615237776", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.877043", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.877111", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7986 bytes): 2487615226256", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.877163", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.877224", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12903 bytes): 2487797722160", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.877276", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=1604)", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.883672", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890047", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890225", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 992063 requests", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890312", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890401", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890473", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.890545", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.893047", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.893484", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.895411", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.895684", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.896169", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.899019", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T09:18:17.899390", "source": "HttpServer", "message_type": "Other", "request_id": "None"}

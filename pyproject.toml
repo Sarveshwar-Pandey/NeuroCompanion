@@ -1,0 +1,19 @@
+[project]
+name = "cogniassure"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sarveshwar Pandey", email = "Sarveshwar2810@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "neuro-san-studio>=0.4.0",
+]
+
+[project.scripts]
+cogniassure = "cogniassure:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
