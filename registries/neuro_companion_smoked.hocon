@@ -133,52 +133,84 @@ Before replying, verify that:
         # =====================================================================
         # 2. PERSONAL MEMORY AGENT
         # =====================================================================
+        
         {
             "name": "personal_memory_agent",
+
             "function": ${aaosa_call}{
-                "description": "Retrieves, verifies, updates, and explains personal cognitive context including people, relationships, autobiographical memories, episodic events, preferences, and relevant temporal facts, with provenance and confidence."
+                "description": "Retrieves structured information about people and relationships from the authenticated user's personal memory database."
             },
-            "instructions": ${instructions_prefix} """
+
+            "instructions": """
+You are the Personal Memory Agent.
+
 ROLE
-You are the Personal Memory Agent. You are the system's specialist for the person's long-term personal context.
+You are responsible for retrieving reliable personal information about the user.
 
-RESPONSIBILITIES
-- Resolve people, relationships, places, events, preferences, and autobiographical memories.
-- Retrieve both exact structured facts and semantically related episodic memories.
-- Compare conflicting or stale memories.
-- Distinguish verified facts from user statements, unverified memories, inferences, and unknowns.
-- Update memory only when an authorized write is explicitly justified by the current interaction.
+CURRENT CAPABILITY
+For this phase, your only database capability is retrieving a person and their relationship.
 
-RETRIEVAL ORDER
-1. Search exact structured facts when the question asks for identity, relationship, date, or other precise attributes.
-2. Search episodic/semantic memory when the question concerns something that happened, a story, or a broader recollection.
-3. Cross-check retrieved evidence for user identity, timestamp, provenance, verification state, and staleness.
-4. Prefer the strongest and most recent authorized evidence, but do not silently overwrite conflicting evidence.
+WHEN TO USE THE TOOL
+Use memory_get_person when the user asks:
+- who someone is
+- what relationship someone has to the user
+- about a known family member
+- about a person by name, alias, or relationship
+Use memory_get_relationship when the user is specifically asking:
+- what relationship someone has to the user
+- who their daughter/son/wife/etc. is
+- whether a known person has a particular relationship
+
+PROCESS
+1. Identify the person or relationship being requested.
+2. Call memory_get_person.
+3. Inspect the returned evidence.
+4. Use the returned relationship, verification status, confidence, and source.
+5. Return only what the database supports.
 
 MEMORY SAFETY
-- Never manufacture a person, relationship, visit, event, or preference.
-- If the evidence says "unknown" or "unverified", preserve that status.
-- If two sources conflict, report the conflict and identify the competing sources when allowed.
-- Do not convert an LLM inference into a stored fact.
-- Do not expose memories outside the caller's authorization scope.
-
-WRITE RULES
-Use memory_write only when the user has clearly supplied a new fact/event or explicitly corrected an existing memory and the information is within the caller's consent scope.
-When writing, preserve provenance, source, timestamp, confidence, and verification status.
+- Never manufacture a person.
+- Never invent a relationship.
+- Never convert an unknown result into a fact.
+- Preserve verification and uncertainty.
+- Do not claim information that was not returned by the tool.
 
 OUTPUT
-Return the useful finding, followed by concise evidence/provenance metadata when the parent agent needs it.
-""" ${aaosa_instructions},
+Give the parent agent the useful finding.
+Include verification status and confidence when relevant.
+""",
+
             "tools": [
-                "memory_search",
-                "memory_get_person",
-                "memory_get_event",
-                "memory_get_relationship",
-                "memory_write",
-                "memory_verify"
+                "memory_get_person"
             ]
         },
 
+
+        # ============================================================
+        # DATABASE-BACKED MEMORY TOOL
+        # ============================================================
+
+        {
+            "name": "memory_get_person",
+
+            "function": {
+                "description": "Retrieve a person's structured identity and relationship information from the authenticated user's personal context. Use a name, alias, or relationship term.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "name_or_alias": {
+                            "type": "string",
+                            "description": "Name, relationship term, or known alias of the person."
+                        }
+                    },
+                    "required": [
+                        "name_or_alias"
+                    ]
+                }
+            },
+
+            "class": "memory_get_person.MemoryGetPersonTool"
+        },
         # =====================================================================
         # 3. ROUTINE SUPPORT AGENT
         # =====================================================================
@@ -397,20 +429,21 @@ PRIVACY
             "class": "memory_search.MemorySearchTool"
         },
         {
+            
             "name": "memory_get_person",
-            "function": {
-                "description": "Retrieve a person's structured identity and relationship information from the authenticated user's personal context.",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "name_or_alias": {
-                            "type": "string",
-                            "description": "Name, relationship term, or known alias of the person."
-                        }
-                    },
-                    "required": ["name_or_alias"]
-                }
-            },
+             "function": {
+            "description": "Retrieve a person's structured identity and relationship information from the authenticated user's personal context.",
+            "parameters": {
+                 "type": "object",
+                "properties": {
+                    "name_or_alias": {
+                        "type": "string",
+                        "description": "Name, relationship term, or known alias of the person."
+                         }
+                     },
+                "required": ["name_or_alias"]
+                  }
+             },
             "class": "memory_get_person.MemoryGetPersonTool"
         },
         {

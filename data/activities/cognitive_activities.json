@@ -1,0 +1,65 @@
+[
+  {
+    "id": "rem_001",
+    "activity_type": "reminiscence",
+    "difficulty": 1,
+    "topic": "family",
+    "title": "Family Memories",
+    "expected_duration": 10,
+    "instructions": "Think about someone in your family who makes you happy. Tell me their name and one thing you remember about them."
+  },
+  {
+    "id": "rem_002",
+    "activity_type": "reminiscence",
+    "difficulty": 2,
+    "topic": "railway_career",
+    "title": "Railway Memories",
+    "expected_duration": 10,
+    "instructions": "Think about your railway career. Tell me one place you worked and one thing you remember from that time."
+  },
+  {
+    "id": "ori_001",
+    "activity_type": "orientation",
+    "difficulty": 1,
+    "topic": "time",
+    "title": "Time and Day",
+    "expected_duration": 5,
+    "instructions": "What day is it today? What month are we in? What part of the day is it?"
+  },
+  {
+    "id": "lan_001",
+    "activity_type": "language",
+    "difficulty": 1,
+    "topic": "word_association",
+    "title": "Word Connection",
+    "expected_duration": 5,
+    "instructions": "I will say a word. Tell me another word that is related to it. Word: railway."
+  },
+  {
+    "id": "seq_001",
+    "activity_type": "sequencing",
+    "difficulty": 2,
+    "topic": "morning",
+    "title": "Morning Steps",
+    "expected_duration": 5,
+    "instructions": "Put these actions in a sensible order: have breakfast, wake up, brush your teeth, get dressed."
+  },
+  {
+    "id": "plan_001",
+    "activity_type": "planning",
+    "difficulty": 2,
+    "topic": "daily_life",
+    "title": "Plan Your Afternoon",
+    "expected_duration": 10,
+    "instructions": "Imagine you want to go for your evening walk and then have dinner. What would you need to do first?"
+  },
+  {
+    "id": "reason_001",
+    "activity_type": "everyday_reasoning",
+    "difficulty": 1,
+    "topic": "daily_life",
+    "title": "Everyday Choice",
+    "expected_duration": 5,
+    "instructions": "It is raining outside and you planned a walk. What could you do instead?"
+  }
+]

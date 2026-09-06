@@ -1,3 +1,4 @@
+
 {
     include "config/llm_config.hocon"
     include "registries/aaosa.hocon"
@@ -69,33 +70,45 @@ Do not expose internal routing or agent details.
         },
 
         {
-            "name": "personal_memory_agent",
+    "name": "personal_memory_agent",
 
-            "function": ${aaosa_call}{
-                "description": "Retrieves information from the user's personal cognitive context, including people, relationships, autobiographical memories, events, and preferences."
+    "function": ${aaosa_call}{
+        "description": "Retrieves information from the user's personal cognitive context, including people, relationships, autobiographical memories, events, and preferences."
+    },
+
+    "instructions": """
+    ...
+    """,
+
+    "tools": [
+        "memory_mock_lookup"
+    ]
+},
+
+{
+    "name": "memory_mock_lookup",
+
+    "function": {
+        "description": "Look up a personal memory from the temporary development memory fixture.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "The personal fact or memory to look up."
+                }
             },
 
-            "instructions": ${instructions_prefix} """
-ROLE
-
-You are the Personal Memory Agent.
-
-CURRENT PHASE
-
-This is a routing experiment. No database or real memory tools are available yet.
-
-For this experiment, use only the following mock knowledge:
-
-- Priya is the user's daughter.
-- The system does not know any other personal facts unless explicitly supplied above.
-
-RULES
-
-- Never invent a personal fact.
-- If the mock knowledge does not contain the answer, clearly say that the information is unknown.
-- Do not pretend the mock information came from a real database.
-- Return the relevant information to the Front Man.
-""" ${aaosa_instructions}
+            "required": [
+                "query"
+            ]
         }
+    },
+
+    "class": "memory_mock_lookup.MemoryMockLookupTool"
+
+}
     ]
 }

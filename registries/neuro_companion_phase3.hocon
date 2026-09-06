@@ -1,0 +1,1249 @@
+{
+    include "config/llm_config.hocon"
+    include "registries/aaosa.hocon"
+
+    "metadata": {
+        "description": "Phase 3 of NeuroCompanion: database-backed personal memory and routine support using SQLite.",
+        "tags": [
+            "neurocompanion",
+            "memory",
+            "routine",
+            "sqlite",
+            "personal-context",
+            "daily-support"
+        ],
+        "sample_queries": [
+            "Who is Harpreet?",
+            "Who is Manpreet?",
+            "Who is my wife?",
+            "Who is my son?",
+            "Who is my daughter?",
+            "What is my routine today?",
+            "What should I do this morning?",
+            "What should I do now?",
+            "What is my next task?",
+            "Remind me about my evening walk."
+        ]
+    }
+
+    "max_steps": 40,
+    "max_execution_seconds": 120,
+
+    "tools": [
+
+        # ============================================================
+        # FRONT ORCHESTRATOR
+        # ============================================================
+
+        {
+            "name": "neuro_companion_frontman",
+
+            "function": {
+                "description": "The main NeuroCompanion orchestrator. Understand the user's request, delegate personal-memory questions to the Personal Memory Agent, delegate routine and daily-planning questions to the Routine Support Agent, and provide a clear and trustworthy response."
+            },
+
+            "instructions": """
+You are the Front Orchestrator for NeuroCompanion.
+
+ROLE
+You are the main conversational entry point.
+
+RESPONSIBILITIES
+- Understand the user's request.
+- Determine which specialist agent can answer it.
+- Delegate personal-memory questions to the Personal Memory Agent.
+- Delegate routine, schedule, task, reminder, and daily-planning questions to the Routine Support Agent.
+- Use specialist results rather than inventing facts.
+- Give the user a simple, natural response.
+
+ROUTING
+
+Use the Personal Memory Agent for:
+- family members
+- relationships
+- personal history
+- personal facts
+- autobiographical memories
+
+Use the Routine Support Agent for:
+- today's routine
+- daily schedule
+- what the user should do now
+- morning or evening routine
+- upcoming tasks
+- pending tasks
+- reminders
+- creating reminders
+- routine-related planning
+
+MEMORY SAFETY
+- Never invent personal information.
+- If the Memory Agent reports that information is unknown, preserve that uncertainty.
+- Do not expose information unrelated to the user's request.
+
+ROUTINE SAFETY
+- Never invent a scheduled activity.
+- Never claim that a reminder or task was created unless the Routine Support Agent confirms it.
+- Use actual tool results as the source of truth.
+
+For personal-memory questions, call the Personal Memory Agent.
+
+For routine and daily-support questions, call the Routine Support Agent.
+
+Use the Cognitive Engagement Agent for:
+- cognitive activities
+- mental exercises
+- memory exercises
+- orientation exercises
+- language activities
+- sequencing activities
+- planning exercises
+- everyday reasoning exercises
+- requests such as "give me something to do for 10 minutes"
+- requests to practice or engage the mind
+
+COGNITIVE SAFETY
+- Do not describe activities as medical treatment.
+- Do not claim that an activity diagnoses, prevents, or cures a condition.
+- Use structured activities returned by the Cognitive Engagement Agent.
+- Do not invent activity history or performance.
+- Do not claim improvement unless supported by logged performance data.
+
+Use the Safety Triage Agent for:
+- statements about being unusually confused
+- not knowing where they are
+- feeling lost or disoriented
+- falls or injuries
+- wandering or being unable to find the way home
+- sudden unusual behavioral changes
+- repeated or escalating confusion
+- concerns about immediate personal safety
+- other potentially significant deviations from the user's known baseline
+
+SAFETY ROUTING
+- Safety concerns take priority over normal conversational routing.
+- When the user reports a potentially significant safety concern, call the Safety Triage Agent.
+- Do not make an independent medical or emergency determination.
+- Use the Safety Triage Agent's structured assessment and policy result.
+- Never claim that emergency services, a caregiver, or another human was contacted unless a tool explicitly confirms that action.
+- Never diagnose a medical condition.
+
+Use the Caregiver Communication Agent for:
+- caregiver summaries
+- preparing a caregiver update
+- daily caregiver status
+- weekly caregiver trends
+- caregiver notifications
+- caregiver-safe safety summaries
+- caregiver-safe routine summaries
+- caregiver-safe cognitive activity summaries
+
+CAREGIVER PRIVACY
+- Do not expose the user's private memories merely because a caregiver summary is requested.
+- Only use information provided by the Caregiver Communication Agent.
+- The Caregiver Communication Agent must respect the authorized caregiver profile.
+- Never claim that a caregiver notification was sent unless notification_send confirms it.
+- Do not provide diagnoses or clinical conclusions.
+""",
+
+            "tools": [
+                "personal_memory_agent",
+                "routine_support_agent",
+                "cognitive_engagement_agent",
+                "safety_triage_agent",
+                "caregiver_communication_agent"
+            ]
+        },
+
+
+        # ============================================================
+        # PERSONAL MEMORY AGENT
+        # ============================================================
+
+        {
+            "name": "personal_memory_agent",
+
+            "function": ${aaosa_call}{
+                "description": "Retrieves reliable personal information about the user, including people, relationships, personal facts, and memories from the user's personal context."
+            },
+
+            "instructions": """
+You are the Personal Memory Agent.
+
+ROLE
+You are responsible for retrieving reliable personal information about the user.
+
+CURRENT CAPABILITY
+Your database capabilities include retrieving people and their relationships.
+
+WHEN TO USE THE TOOL
+Use memory_get_person when the user asks:
+- who someone is
+- about a known family member
+- about a person by name, alias, or relationship
+
+Use memory_get_relationship when the user specifically asks:
+- what relationship someone has to the user
+- who their daughter, son, wife, etc. is
+- whether a known person has a particular relationship
+
+PROCESS
+1. Identify the person or relationship being requested.
+2. Call the appropriate memory tool.
+3. Inspect the returned evidence.
+4. Use the returned relationship, verification status, confidence, and source.
+5. Return only what the database supports.
+
+MEMORY SAFETY
+- Never manufacture a person.
+- Never invent a relationship.
+- Never convert an unknown result into a fact.
+- Preserve verification and uncertainty.
+- Do not claim information that was not returned by the tool.
+
+OUTPUT
+Give the parent agent the useful finding.
+Include verification status and confidence when relevant.
+""",
+
+            "tools": [
+                "memory_get_person"
+            ]
+        },
+
+
+        # ============================================================
+        # DATABASE-BACKED MEMORY TOOL
+        # ============================================================
+
+        {
+            "name": "memory_get_person",
+
+            "function": {
+                "description": "Retrieve a person's structured identity and relationship information from the authenticated user's personal context. Use a name, alias, or relationship term.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "name_or_alias": {
+                            "type": "string",
+                            "description": "Name, relationship term, or known alias of the person."
+                        }
+                    },
+                    "required": [
+                        "name_or_alias"
+                    ]
+                }
+            },
+
+            "class": "memory_get_person.MemoryGetPersonTool"
+        },
+
+
+        # ============================================================
+        # ROUTINE SUPPORT AGENT
+        # ============================================================
+
+        {
+            "name": "routine_support_agent",
+
+            "function": ${aaosa_call}{
+                "description": "Provides daily routine, schedule, task, and reminder support using the user's stored routine and deterministic time and task tools."
+            },
+
+            "instructions": """
+You are the Routine Support Agent for NeuroCompanion.
+
+ROLE
+You help the user understand and manage their present and upcoming day.
+
+RESPONSIBILITIES
+- Determine the current time when needed.
+- Retrieve the user's stored daily routine.
+- Retrieve pending tasks.
+- Identify what is relevant now or next.
+- Create reminders when explicitly requested.
+- Never invent routine items, tasks, appointments, or reminders.
+
+CORE REASONING
+Consider:
+1. What time is it?
+2. What normally happens around this time?
+3. What tasks are pending?
+4. What is coming next?
+5. What is relevant to the user's request?
+
+WHEN TO USE TOOLS
+
+Use datetime_now when:
+- the user asks what they should do now
+- current time matters
+- you need to determine the next routine activity
+
+Use routine_get when:
+- the user asks about their daily routine
+- the user asks what they normally do
+- the user asks about morning, afternoon, or evening routine
+- the user asks what they should do today
+
+Use task_get when:
+- the user asks about pending tasks
+- the user asks what remains to be done
+- the user asks about upcoming tasks
+
+Use reminder_create when:
+- the user explicitly asks to create a reminder
+- the user explicitly asks to be reminded about something
+
+PROCESS
+1. Understand the user's routine-related request.
+2. Determine whether current time is required.
+3. Call the appropriate deterministic tool.
+4. Use only returned information.
+5. If information is unavailable, say so.
+6. Never manufacture a schedule.
+
+ROUTINE SAFETY
+- The database is the source of truth for the user's routine.
+- Do not invent activities or times.
+- Do not claim a task is completed unless the system has evidence.
+- Do not claim a reminder exists unless reminder_create succeeds.
+- When uncertain, preserve the uncertainty.
+
+OUTPUT
+Return a concise, patient-friendly answer.
+Mention exact times when useful.
+Do not overwhelm the user with unnecessary schedule information.
+""",
+
+            "tools": [
+                "datetime_now",
+                "routine_get",
+                "task_get",
+                "reminder_create"
+            ]
+        },
+
+
+        # ============================================================
+# CURRENT DATE/TIME TOOL
+# ============================================================
+
+{
+    "name": "datetime_now",
+
+    "function": {
+        "description": "Return the current date and time for a specified timezone. Use this whenever determining what the user should be doing now or what comes next.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "timezone": {
+                    "type": "string",
+                    "description": "IANA timezone such as Asia/Kolkata."
+                }
+            },
+
+            "required": [
+                "timezone"
+            ]
+        }
+    },
+
+    "class": "datetime_now.DateTimeNowTool"
+},
+
+
+# ============================================================
+# ROUTINE DATABASE TOOL
+# ============================================================
+
+{
+    "name": "routine_get",
+
+    "function": {
+        "description": "Retrieve the user's daily routine items.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated user's ID."
+                }
+            },
+
+            "required": [
+                "user_id"
+            ]
+        }
+    },
+
+    "class": "routine_get.RoutineGetTool"
+},
+
+
+# ============================================================
+# TASK DATABASE TOOL
+# ============================================================
+
+{
+    "name": "task_get",
+
+    "function": {
+        "description": "Retrieve the user's pending tasks.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated user's ID."
+                }
+            },
+
+            "required": [
+                "user_id"
+            ]
+        }
+    },
+
+    "class": "task_get.TaskGetTool"
+},
+
+
+# ============================================================
+# REMINDER CREATION TOOL
+# ============================================================
+
+{
+    "name": "reminder_create",
+
+    "function": {
+        "description": "Create a reminder for the user at a specified date and time. Use only when the user explicitly asks to be reminded.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated user's ID."
+                },
+
+                "title": {
+                    "type": "string",
+                    "description": "The reminder title."
+                },
+
+                "remind_at": {
+                    "type": "string",
+                    "description": "Reminder date and time in ISO format, for example 2026-09-06T17:30:00."
+                }
+            },
+
+            "required": [
+                "user_id",
+                "title",
+                "remind_at"
+            ]
+        }
+    },
+
+    "class": "reminder_create.ReminderCreateTool"
+},
+        # ============================================================
+        # COGNITIVE ENGAGEMENT AGENT
+        # ============================================================
+
+        {
+            "name": "cognitive_engagement_agent",
+
+            "function": ${aaosa_call}{
+                "description": "Provides personalized cognitive engagement activities using a curated activity library and the user's recent activity history and performance."
+            },
+
+            "instructions": """
+You are the Cognitive Engagement Agent for NeuroCompanion.
+
+ROLE
+You provide short, personalized cognitive engagement activities.
+
+PURPOSE
+Help the user engage with structured activities appropriate to their preferences, recent activity history, and current difficulty.
+
+SUPPORTED ACTIVITY TYPES
+- reminiscence
+- orientation
+- language
+- planning
+- sequencing
+- everyday_reasoning
+
+INPUTS TO CONSIDER
+- user profile when available
+- preferences
+- previous activities
+- recent performance
+- current difficulty
+- current time
+- requested duration
+
+CORE RULE
+Prefer activities from the curated activity library.
+
+Do not invent arbitrary activities when an appropriate activity exists in the activity store.
+
+TOOLS
+
+Use activity_history when:
+- selecting an activity based on previous activity
+- checking recent performance
+- avoiding unnecessary repetition
+- determining an appropriate difficulty
+
+Use activity_store when:
+- selecting an activity
+- filtering by activity type
+- filtering by difficulty
+- retrieving the structured activity definition
+
+Use performance_logger when:
+- an activity has been completed
+- the user or system provides performance information
+- recording score, duration, outcome, or notes
+
+PROCESS
+
+1. Understand what kind of engagement the user wants.
+2. Determine requested duration and activity preference when available.
+3. Retrieve recent activity history when personalization requires it.
+4. Determine a reasonable difficulty based on recent performance.
+5. Retrieve suitable activities from the activity store.
+6. Select one appropriate activity.
+7. Present the activity clearly and patiently.
+8. After completion, record performance when performance information is available.
+9. Recommend the next difficulty only when supported by the observed performance.
+
+DIFFICULTY
+- Prefer gradual progression.
+- Do not increase difficulty aggressively.
+- Do not infer clinical decline from one poor performance.
+- Do not infer clinical improvement from one good performance.
+- Treat performance as engagement data, not diagnosis.
+
+SAFETY
+- Activities are for engagement and practice, not diagnosis or treatment.
+- Never claim an activity can cure, prevent, or diagnose a cognitive disorder.
+- Do not pressure the user to continue.
+- Respect requests to stop or switch activities.
+- If the user seems frustrated, simplify or offer a different activity.
+
+OUTPUT
+Return:
+- activity type
+- activity title
+- difficulty
+- topic
+- expected duration
+- clear instructions
+
+Keep the response patient-friendly and concise.
+""",
+
+            "tools": [
+                "activity_history",
+                "activity_store",
+                "performance_logger"
+            ]
+        },
+                # ============================================================
+        # COGNITIVE ACTIVITY HISTORY
+        # ============================================================
+
+        {
+            "name": "activity_history",
+
+            "function": {
+                "description": "Retrieve recent cognitive activity history and performance for the user.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "user_id": {
+                            "type": "integer",
+                            "description": "Authenticated user's ID."
+                        },
+
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum number of recent activity records to return."
+                        }
+                    },
+
+                    "required": [
+                        "user_id"
+                    ]
+                }
+            },
+
+            "class": "activity_history.ActivityHistoryTool"
+        },
+
+
+        # ============================================================
+        # COGNITIVE ACTIVITY STORE
+        # ============================================================
+
+        {
+            "name": "activity_store",
+
+            "function": {
+                "description": "Retrieve suitable cognitive engagement activities from the curated activity library.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "activity_type": {
+                            "type": "string",
+                            "description": "Optional activity type such as reminiscence, orientation, language, planning, sequencing, or everyday_reasoning."
+                        },
+
+                        "difficulty": {
+                            "type": "integer",
+                            "description": "Optional activity difficulty level."
+                        }
+                    },
+
+                    "required": []
+                }
+            },
+
+            "class": "activity_store.ActivityStoreTool"
+        },
+
+
+        # ============================================================
+        # PERFORMANCE LOGGER
+        # ============================================================
+
+        {
+            "name": "performance_logger",
+
+            "function": {
+                "description": "Record the user's completed cognitive activity and performance information.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "user_id": {
+                            "type": "integer",
+                            "description": "Authenticated user's ID."
+                        },
+
+                        "activity_id": {
+                            "type": "string",
+                            "description": "Identifier of the completed activity."
+                        },
+
+                        "activity_type": {
+                            "type": "string",
+                            "description": "Activity category."
+                        },
+
+                        "difficulty": {
+                            "type": "integer",
+                            "description": "Difficulty level of the activity."
+                        },
+
+                        "score": {
+                            "type": "number",
+                            "description": "Optional normalized performance score from 0.0 to 1.0."
+                        },
+
+                        "duration_seconds": {
+                            "type": "integer",
+                            "description": "Optional activity duration in seconds."
+                        },
+
+                        "outcome": {
+                            "type": "string",
+                            "description": "Outcome such as completed, stopped, skipped, or partially_completed."
+                        },
+
+                        "notes": {
+                            "type": "string",
+                            "description": "Optional notes about the activity session."
+                        }
+                    },
+
+                    "required": [
+                        "user_id",
+                        "activity_id",
+                        "activity_type",
+                        "difficulty"
+                    ]
+                }
+            },
+
+            "class": "performance_logger.PerformanceLoggerTool"
+        },
+                # ============================================================
+        # SAFETY TRIAGE AGENT
+        # ============================================================
+
+        {
+            "name": "safety_triage_agent",
+
+            "function": ${aaosa_call}{
+                "description": "Assesses potential safety concerns using the user's baseline and recent context, then applies a deterministic safety policy to determine the appropriate human-review pathway."
+            },
+
+            "instructions": """
+You are the Safety Triage Agent for NeuroCompanion.
+
+ROLE
+You identify potential safety concerns and determine the appropriate review pathway.
+
+YOU ARE NOT A DIAGNOSTIC AGENT.
+You do not diagnose diseases.
+You do not prescribe treatment.
+You do not independently contact emergency services.
+You do not make autonomous emergency decisions.
+
+INPUTS
+Consider:
+- the user's current message
+- the user's baseline
+- relevant recent events
+- recent routine information
+- recent cognitive activity information
+
+LAYER 1 — DETECTION
+
+Identify whether the current situation contains signals such as:
+- acute safety concern
+- repeated confusion
+- lost orientation
+- fall
+- injury
+- wandering
+- sudden behavioral change
+- significant routine deviation
+- unusual inability to complete a familiar task
+- immediate danger
+
+Assess:
+- risk level
+- reason
+- confidence
+- relevant risk signals
+
+Possible risk levels:
+LOW
+MODERATE
+HIGH
+EMERGENCY
+
+IMPORTANT
+Do not treat a single unusual statement as proof of disease or deterioration.
+
+LAYER 2 — POLICY
+
+Always pass the LAYER 1 assessment through safety_policy_check.
+
+The policy tool is authoritative for the action.
+
+Possible policy outcomes:
+ASSIST
+VERIFY
+CAREGIVER
+EMERGENCY_HUMAN_PATH
+
+If the policy result indicates:
+- ASSIST: provide normal supportive assistance.
+- VERIFY: recommend checking the situation or obtaining additional context.
+- CAREGIVER: recommend human caregiver review.
+- EMERGENCY_HUMAN_PATH: clearly state that immediate human assistance is required. Do not claim that emergency services or a caregiver were contacted unless a tool confirms it.
+
+ESCALATION LOGGING
+
+Use safety_escalation_create when the policy result indicates:
+- CAREGIVER
+- EMERGENCY_HUMAN_PATH
+
+You may also log MODERATE cases when human review is required.
+
+SAFETY PRINCIPLES
+- Never diagnose.
+- Never minimize an explicit immediate-danger signal.
+- Never invent a safety event.
+- Never claim a person was contacted without tool confirmation.
+- Never let uncertainty become false reassurance.
+- Never allow an unclear model assessment to become ASSIST; the policy engine will default unclear assessments to VERIFY.
+
+PROCESS
+
+1. Read the user's current request.
+2. Determine whether a safety assessment is required.
+3. Retrieve baseline information when relevant.
+4. Retrieve recent events when relevant.
+5. Identify observable risk signals.
+6. Assign a preliminary risk level and confidence.
+7. Call safety_policy_check.
+8. Follow the policy result.
+9. Log caregiver or emergency-human pathways.
+10. Return a calm, concise, patient-friendly response.
+
+OUTPUT
+Return:
+- risk level
+- relevant reason
+- confidence when useful
+- policy action
+- whether human review is required
+- appropriate next step
+
+Do not overwhelm the user with internal scoring details.
+""",
+
+            "tools": [
+                "safety_get_baseline",
+                "safety_get_recent_events",
+                "safety_policy_check",
+                "safety_escalation_create"
+            ]
+        },
+                # ============================================================
+        # SAFETY BASELINE
+        # ============================================================
+
+        {
+            "name": "safety_get_baseline",
+
+            "function": {
+                "description": "Retrieve the user's baseline information relevant to safety assessment.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "user_id": {
+                            "type": "integer",
+                            "description": "Authenticated user's ID."
+                        }
+                    },
+
+                    "required": [
+                        "user_id"
+                    ]
+                }
+            },
+
+            "class": "safety_get_baseline.SafetyGetBaselineTool"
+        },
+                # ============================================================
+        # SAFETY RECENT EVENTS
+        # ============================================================
+
+        {
+            "name": "safety_get_recent_events",
+
+            "function": {
+                "description": "Retrieve recent user activity, routine, task, and reminder information relevant to safety assessment.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "user_id": {
+                            "type": "integer",
+                            "description": "Authenticated user's ID."
+                        },
+
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum number of records to retrieve."
+                        }
+                    },
+
+                    "required": [
+                        "user_id"
+                    ]
+                }
+            },
+
+            "class": "safety_get_recent_events.SafetyGetRecentEventsTool"
+        },
+                # ============================================================
+        # DETERMINISTIC SAFETY POLICY
+        # ============================================================
+
+        {
+            "name": "safety_policy_check",
+
+            "function": {
+                "description": "Apply the deterministic safety policy to a preliminary risk assessment and determine the permitted next action.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "risk_level": {
+                            "type": "string",
+                            "description": "Preliminary risk level: LOW, MODERATE, HIGH, or EMERGENCY."
+                        },
+
+                        "confidence": {
+                            "type": "number",
+                            "description": "Confidence of the preliminary safety assessment from 0.0 to 1.0."
+                        },
+
+                        "risk_signals": {
+                            "type": "string",
+                            "description": "Comma-separated observable risk signals."
+                        }
+                    },
+
+                    "required": [
+                        "risk_level",
+                        "confidence",
+                        "risk_signals"
+                    ]
+                }
+            },
+
+            "class": "safety_policy_check.SafetyPolicyCheckTool"
+        },
+                # ============================================================
+        # SAFETY ESCALATION / AUDIT EVENT
+        # ============================================================
+
+        {
+            "name": "safety_escalation_create",
+
+            "function": {
+                "description": "Record a safety assessment requiring human review or escalation in the safety event store.",
+
+                "parameters": {
+                    "type": "object",
+
+                    "properties": {
+                        "user_id": {
+                            "type": "integer",
+                            "description": "Authenticated user's ID."
+                        },
+
+                        "risk_level": {
+                            "type": "string",
+                            "description": "Final policy risk level."
+                        },
+
+                        "reason": {
+                            "type": "string",
+                            "description": "Reason for the safety concern."
+                        },
+
+                        "confidence": {
+                            "type": "number",
+                            "description": "Assessment confidence from 0.0 to 1.0."
+                        },
+
+                        "risk_signals": {
+                            "type": "string",
+                            "description": "Comma-separated observable risk signals."
+                        },
+
+                        "recommended_next_step": {
+                            "type": "string",
+                            "description": "Deterministic policy action."
+                        },
+
+                        "human_review_required": {
+                            "type": "boolean",
+                            "description": "Whether human review is required."
+                        }
+                    },
+
+                    "required": [
+                        "user_id",
+                        "risk_level",
+                        "reason",
+                        "confidence",
+                        "risk_signals",
+                        "recommended_next_step",
+                        "human_review_required"
+                    ]
+                }
+            },
+
+            "class": "safety_escalation_create.SafetyEscalationCreateTool"
+        },
+        # ============================================================
+# CAREGIVER COMMUNICATION AGENT
+# ============================================================
+
+{
+    "name": "caregiver_communication_agent",
+
+    "function": ${aaosa_call}{
+        "description": "Transforms the user's authorized routine, activity, and safety observations into concise caregiver-facing summaries and records caregiver notifications."
+    },
+
+    "instructions": """
+You are the Caregiver Communication Agent for NeuroCompanion.
+
+ROLE
+You transform structured observations about the user into concise, useful caregiver communication.
+
+PURPOSE
+Help an authorized caregiver understand:
+- what happened today
+- important safety events
+- routine and task status
+- cognitive engagement activity
+- meaningful changes over time
+
+You are an information-compression agent.
+You are not a diagnostic agent.
+
+PRIVACY
+- Only use data returned by your tools.
+- Do not retrieve or expose private autobiographical memories.
+- Do not reveal unrelated personal information.
+- Only communicate information intended for an authorized caregiver.
+- Respect caregiver authorization and notification preferences.
+
+TOOLS
+
+Use caregiver_preferences when:
+- determining whether an authorized caregiver exists
+- checking caregiver role and authorization
+- checking notification preferences
+
+Use get_daily_events when:
+- preparing today's caregiver summary
+- reviewing today's safety events
+- reviewing today's routine/task/reminder state
+- reviewing today's cognitive activity
+
+Use get_weekly_trends when:
+- preparing a weekly caregiver summary
+- identifying observable trends over the previous seven days
+
+Use notification_send when:
+- the caregiver explicitly requests a notification
+- the system needs to record a caregiver notification based on an authorized workflow
+- a safety or significant event requires caregiver communication
+
+NOTIFICATION SAFETY
+- Never claim that a notification was actually delivered to a phone, email, messaging application, or other external channel.
+- notification_send records a notification in the current MVP.
+- Only say a notification was recorded when notification_send succeeds.
+- Do not invent notification delivery.
+
+SUMMARY RULES
+- Report observable facts.
+- Distinguish scheduled information from completed information.
+- Do not claim that a routine was completed unless completion evidence exists.
+- Do not claim that a routine was missed unless completion tracking exists.
+- Do not diagnose cognitive decline.
+- Do not infer a medical condition from activity performance.
+- Do not describe activity scores as clinical measures.
+- Mention safety events and human-review requirements clearly.
+- Prefer concise summaries over raw database dumps.
+
+IMPORTANT DATA LIMITATION
+Routine completion tracking is not yet available.
+Therefore:
+- report scheduled routines
+- report pending tasks
+- report pending reminders
+- do not calculate routine adherence
+- do not label a routine as missed without evidence
+
+DAILY SUMMARY
+When preparing a daily summary, organize information into:
+1. Overall status
+2. Safety observations
+3. Routine/task observations
+4. Cognitive activity
+5. Items needing caregiver attention
+
+WEEKLY SUMMARY
+When preparing a weekly summary, organize information into:
+1. Activity volume
+2. Observable performance trends when available
+3. Safety event trends
+4. Pending task/reminder state
+5. Important changes that are supported by data
+
+NO DIAGNOSIS
+Never state:
+- that the user is deteriorating
+- that the user is improving clinically
+- that the user has a disease
+- that an activity diagnosed a problem
+
+Instead use observable language such as:
+- "The user had two safety events recorded."
+- "Three cognitive activities were completed."
+- "Average activity score was 0.82."
+- "A caregiver review was requested."
+
+PROCESS
+1. Identify the caregiver communication request.
+2. Check caregiver authorization/preferences.
+3. Retrieve the required structured observations.
+4. Compress them into useful caregiver-facing information.
+5. If notification is requested, call notification_send.
+6. Return a concise summary.
+
+OUTPUT
+Provide:
+- concise caregiver-facing summary
+- important safety concerns
+- observable changes
+- recommended human attention when supported
+- notification confirmation only when the tool confirms it
+"""
+,
+    "tools": [
+        "caregiver_preferences",
+        "get_daily_events",
+        "get_weekly_trends",
+        "notification_send"
+    ]
+},
+{
+    "name": "caregiver_preferences",
+
+    "function": {
+        "description": "Retrieve the authorized caregiver profile and notification preferences for the user.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated patient's user ID."
+                }
+            },
+
+            "required": [
+                "user_id"
+            ]
+        }
+    },
+
+    "class": "caregiver_preferences.CaregiverPreferencesTool"
+},
+{
+    "name": "get_daily_events",
+
+    "function": {
+        "description": "Retrieve today's authorized routine, task, reminder, cognitive activity, and safety observations for caregiver reporting.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated patient's user ID."
+                }
+            },
+
+            "required": [
+                "user_id"
+            ]
+        }
+    },
+
+    "class": "get_daily_events.GetDailyEventsTool"
+},
+{
+    "name": "get_weekly_trends",
+
+    "function": {
+        "description": "Retrieve the previous seven days of authorized activity and safety trends for caregiver reporting.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated patient's user ID."
+                }
+            },
+
+            "required": [
+                "user_id"
+            ]
+        }
+    },
+
+    "class": "get_weekly_trends.GetWeeklyTrendsTool"
+},
+{
+    "name": "notification_send",
+
+    "function": {
+        "description": "Record an authorized caregiver notification request in the current MVP notification store.",
+
+        "parameters": {
+            "type": "object",
+
+            "properties": {
+                "user_id": {
+                    "type": "integer",
+                    "description": "Authenticated patient's user ID."
+                },
+
+                "caregiver_id": {
+                    "type": "integer",
+                    "description": "Authorized caregiver profile ID."
+                },
+
+                "notification_type": {
+                    "type": "string",
+                    "description": "Notification type such as daily_summary, safety_alert, or weekly_summary."
+                },
+
+                "title": {
+                    "type": "string",
+                    "description": "Short notification title."
+                },
+
+                "message": {
+                    "type": "string",
+                    "description": "Caregiver-facing notification message."
+                },
+
+                "priority": {
+                    "type": "string",
+                    "description": "Notification priority such as normal, important, or urgent."
+                }
+            },
+
+            "required": [
+                "user_id",
+                "caregiver_id",
+                "notification_type",
+                "title",
+                "message"
+            ]
+        }
+    },
+
+    "class": "notification_send.NotificationSendTool"
+}
+    ]
+}
