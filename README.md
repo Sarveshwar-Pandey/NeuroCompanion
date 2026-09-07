@@ -2,7 +2,7 @@
 
 > A trustworthy, multi-agent personal cognitive companion for memory support, daily orientation, cognitive engagement, safety triage, and caregiver communication.
 
-NeuroCompanion is a project build **Cognizant AI Lab framework Neuro-SAN**  The product is designed around one central idea:
+NeuroCompanion is a project build on**Cognizant AI Lab framework Neuro-SAN**  The product is designed around one central idea:
 
 > **Use AI to help a person remember, orient, engage, and stay connected — while keeping sensitive decisions governed by deterministic software and humans.**
 
