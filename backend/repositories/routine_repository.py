@@ -36,6 +36,19 @@ class RoutineRepository:
 
         return list(self.session.scalars(statement).all())
 
+    def get_pending_reminders(
+        self,
+        user_id: int,
+    ) -> list[Reminder]:
+        statement = (
+            select(Reminder)
+            .where(Reminder.user_id == user_id)
+            .where(Reminder.status == "pending")
+            .order_by(Reminder.remind_at)
+        )
+
+        return list(self.session.scalars(statement).all())
+
     def create_reminder(
         self,
         user_id: int,

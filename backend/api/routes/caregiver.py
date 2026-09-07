@@ -1,10 +1,9 @@
-from typing import Any
-
 from fastapi import APIRouter, HTTPException
 
 from backend.api.context import get_request_context
 from backend.api.schemas.caregiver import (
     CaregiverNotificationsResponse,
+    CaregiverPreferencesResponse,
     CaregiverSummaryResponse,
 )
 from backend.services.caregiver.caregiver_service import CaregiverService
@@ -14,6 +13,20 @@ router = APIRouter(
     prefix="/caregiver",
     tags=["caregiver"],
 )
+
+
+def _require_authorized_caregiver(service: CaregiverService, patient_user_id: int) -> dict:
+    preferences = service.get_preferences(
+        patient_user_id=patient_user_id,
+    )
+
+    if not preferences.get("authorized_caregiver_found", False):
+        raise HTTPException(
+            status_code=403,
+            detail="No authorized caregiver profile was found.",
+        )
+
+    return preferences
 
 
 @router.get(
@@ -28,15 +41,7 @@ async def get_caregiver_summary() -> CaregiverSummaryResponse:
     context = get_request_context()
     service = CaregiverService()
 
-    preferences = service.get_preferences(
-        patient_user_id=context.user_id,
-    )
-
-    if not preferences.get("authorized_caregiver_found", False):
-        raise HTTPException(
-            status_code=403,
-            detail="No authorized caregiver profile was found.",
-        )
+    _require_authorized_caregiver(service, context.user_id)
 
     daily_events = service.get_daily_events(
         patient_user_id=context.user_id,
@@ -64,54 +69,34 @@ async def get_caregiver_notifications() -> CaregiverNotificationsResponse:
     """
 
     context = get_request_context()
+    service = CaregiverService()
 
-    # The current CaregiverService does not expose a notification-read
-    # method, so we read existing notifications directly from the database
-    # after verifying that an authorized caregiver exists.
-    preferences_service = CaregiverService()
+    _require_authorized_caregiver(service, context.user_id)
 
-    preferences = preferences_service.get_preferences(
+    notifications = service.get_notifications(
         patient_user_id=context.user_id,
+        limit=50,
     )
-
-    if not preferences.get("authorized_caregiver_found", False):
-        raise HTTPException(
-            status_code=403,
-            detail="No authorized caregiver profile was found.",
-        )
-
-    from backend.db.database import SessionLocal
-    from backend.db.models import CaregiverNotification
-
-    with SessionLocal() as db:
-        notifications = list(
-            db.query(CaregiverNotification)
-            .filter(
-                CaregiverNotification.patient_user_id
-                == context.user_id
-            )
-            .order_by(CaregiverNotification.created_at.desc())
-            .limit(50)
-            .all()
-        )
-
-        notification_data = [
-            {
-                "notification_id": notification.id,
-                "caregiver_id": notification.caregiver_id,
-                "notification_type": notification.notification_type,
-                "title": notification.title,
-                "message": notification.message,
-                "priority": notification.priority,
-                "status": notification.status,
-                "created_at": notification.created_at.isoformat(),
-            }
-            for notification in notifications
-        ]
 
     return CaregiverNotificationsResponse(
         success=True,
         patient_user_id=context.user_id,
-        count=len(notification_data),
-        notifications=notification_data,
+        count=len(notifications),
+        notifications=notifications,
+    )
+
+
+@router.get(
+    "/preferences",
+    response_model=CaregiverPreferencesResponse,
+)
+async def get_caregiver_preferences() -> CaregiverPreferencesResponse:
+    context = get_request_context()
+    service = CaregiverService()
+    preferences = _require_authorized_caregiver(service, context.user_id)
+
+    return CaregiverPreferencesResponse(
+        success=True,
+        patient_user_id=context.user_id,
+        preferences=preferences,
     )

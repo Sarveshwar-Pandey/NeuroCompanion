@@ -15,3 +15,9 @@ class CaregiverNotificationsResponse(BaseModel):
     patient_user_id: int
     count: int
     notifications: list[dict[str, Any]]
+
+
+class CaregiverPreferencesResponse(BaseModel):
+    success: bool
+    patient_user_id: int
+    preferences: dict[str, Any]

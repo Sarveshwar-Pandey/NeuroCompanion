@@ -7837,3 +7837,1769 @@ INFO:     Application shutdown complete.
 INFO:     Finished server process [21892]
 INFO:     Stopping reloader process [12796]
  
+INFO:     Will watch for changes in these directories: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy']
+INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+INFO:     Started reloader process [10548] using StatReload
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-07 04:44:31 - root - INFO - frontend_dist_path: C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+2026-09-07 04:44:31 - root - INFO - Serving frontend from: C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+INFO:     Started server process [15316]
+INFO:     Waiting for application startup.
+2026-09-07 04:44:31 - root - INFO - FastAPI is starting up...
+2026-09-07 04:44:31 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-07 04:44:31 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-07 04:44:31 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-07 04:44:31 - root - INFO - Local database 'nss_local.db' initialized
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53485 - "GET /?network=neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53485 - "GET /assets/index.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58829 - "GET /assets/index.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58829 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58829 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58829 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53485 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63805 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 04:50:11 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:50:11 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:50:11 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:53485 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63805 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 04:50:15 - root - INFO - network_name: neuro_companion_phase3
+INFO:     127.0.0.1:53485 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53485 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59243 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:50:15 - neuro_companion_phase3 - INFO - New logs client connected
+INFO:     127.0.0.1:64294 - "GET /api/v1/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65497 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63805 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:50:19 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:50:19 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:64294 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58829 - "GET /api/v1/networkconfig/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64437 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     127.0.0.1:63805 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:59696 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+INFO:     127.0.0.1:52294 - "GET /api/v1/mcp/oauth/required/neuro_companion_phase3 HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+INFO:     127.0.0.1:64294 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:59696 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+INFO:     127.0.0.1:64294 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+INFO:     127.0.0.1:53485 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 04:50:19 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:61868 - "WebSocket /api/v1/ws/chat/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:50:19 - neuro_companion_phase3 - INFO - Chat client session_1788736810382_0a8832dbb5cf74 connected to agent: neuro_companion_phase3
+INFO:     127.0.0.1:57999 - "WebSocket /api/v1/ws/internalchat/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:50:19 - neuro_companion_phase3 - INFO - Internal chat connected: neuro_companion_phase3
+2026-09-07 04:50:19 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:65153 - "WebSocket /api/v1/ws/slydata/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61376 - "WebSocket /api/v1/ws/progress/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:50:52 - root - INFO - network_name: neuro_companion_phase3, agent_name: personal_memory_agent
+INFO:     127.0.0.1:62837 - "GET /api/v1/networkconfig/neuro_companion_phase3/agent/personal_memory_agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64344 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:50:58 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:64344 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 04:51:01 - neuro_companion_phase3 - INFO - WebSocket chat client disconnected: session_1788736810382_0a8832dbb5cf74
+2026-09-07 04:51:01 - root - INFO - network_name: neuro_companion_phase2
+INFO:     127.0.0.1:54619 - "WebSocket /api/v1/ws/logs/neuro_companion_phase2/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:51:01 - neuro_companion_phase2 - INFO - New logs client connected
+2026-09-07 04:51:01 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:01 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:01 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase2/http
+INFO:     127.0.0.1:53834 - "GET /api/v1/connectivity/neuro_companion_phase2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64344 - "GET /api/v1/networkconfig/neuro_companion_phase2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65493 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     127.0.0.1:55985 - "GET /api/v1/mcp/oauth/required/neuro_companion_phase2 HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:65200 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 04:51:12 - agent_network_test_generator - INFO - New logs client connected
+INFO:     127.0.0.1:60542 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:51:12 - neuro_companion_phase3 - INFO - New logs client connected
+INFO:     127.0.0.1:65327 - "WebSocket /api/v1/ws/logs/neuro_companion_phase2/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:51:12 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:12 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:12 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:61981 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 04:51:18 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+INFO:     127.0.0.1:64344 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+2026-09-07 04:51:18 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+INFO:     127.0.0.1:61981 - "GET /?network=neuro_companion_phase3 HTTP/1.1" 200 OK
+2026-09-07 04:51:18 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:53961 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 04:51:18 - root - INFO - network_name: agent_network_test_generator
+INFO:     127.0.0.1:53961 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 04:51:18 - root - INFO - network_name: neuro_companion_phase3
+INFO:     127.0.0.1:61981 - "GET /api/v1/connectivity/neuro_companion_phase2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54636 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736810382_0a8832dbb5cf74" [accepted]
+INFO:     connection open
+2026-09-07 04:51:18 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:18 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:18 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase2/http
+2026-09-07 04:51:18 - root - INFO - network_name: neuro_companion_phase3, agent_name: memory_get_person
+INFO:     127.0.0.1:61588 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61346 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61588 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64143 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 04:51:19 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:19 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:19 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:61588 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61346 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:51:19 - root - INFO - network_name: neuro_companion_phase3
+INFO:     127.0.0.1:61346 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61237 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65497 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 04:51:20 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:20 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:20 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:61237 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61346 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61993 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56548 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+2026-09-07 04:51:20 - neuro_companion_phase3 - INFO - New logs client connected
+2026-09-07 04:51:20 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:20 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:20 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:61993 - "GET /api/v1/connectivity/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61346 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59085 - "WebSocket /api/v1/ws/logs/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     127.0.0.1:65497 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:65497 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:51:21 - root - INFO - Using thinking file: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\agent_thinking.txt
+2026-09-07 04:51:21 - root - INFO - Using thinking dir: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\logs\thinking_dir
+2026-09-07 04:51:21 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/neuro_companion_phase3/http
+INFO:     127.0.0.1:55602 - "WebSocket /api/v1/ws/chat/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65497 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 04:51:21 - neuro_companion_phase3 - INFO - Chat client session_1788736879224_501991d7393667 connected to agent: neuro_companion_phase3
+INFO:     127.0.0.1:61237 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 04:51:21 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62086 - "WebSocket /api/v1/ws/internalchat/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+2026-09-07 04:51:21 - neuro_companion_phase3 - INFO - Internal chat connected: neuro_companion_phase3
+INFO:     127.0.0.1:63413 - "WebSocket /api/v1/ws/progress/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63571 - "WebSocket /api/v1/ws/sustainability/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63704 - "WebSocket /api/v1/ws/slydata/neuro_companion_phase3/session_1788736879224_501991d7393667" [accepted]
+INFO:     connection open
+2026-09-07 04:51:22 - root - INFO - network_name: neuro_companion_phase3, agent_name: memory_get_person
+INFO:     127.0.0.1:64143 - "GET /api/v1/networkconfig/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61588 - "GET /api/v1/mcp/oauth/required/neuro_companion_phase3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61237 - "GET /api/v1/networkconfig/neuro_companion_phase3/agent/memory_get_person HTTP/1.1" 200 OK
+2026-09-07 04:51:41 - neuro_companion_phase3 - INFO - WebSocket chat client disconnected: session_1788736879224_501991d7393667
+INFO:     Shutting down
+INFO:     Waiting for background tasks to complete. (CTRL+C to force quit)
+INFO:     Finished server process [15316]
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 46, in websocket_internal_chat
+    await manager.handle_internal_chat_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 151, in handle_internal_chat_websocket
+    await asyncio.sleep(1)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2026-09-07 04:52:00 - root - INFO - FastAPI is shutting down...
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 655, in lifespan
+    await receive()
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 67, in websocket_progress
+    await manager.handle_progress_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 196, in handle_progress_websocket
+    await asyncio.sleep(ASYNCIO_SLEEP_INTERVAL)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 67, in websocket_progress
+    await manager.handle_progress_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 196, in handle_progress_websocket
+    await asyncio.sleep(ASYNCIO_SLEEP_INTERVAL)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 46, in websocket_internal_chat
+    await manager.handle_internal_chat_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 151, in handle_internal_chat_websocket
+    await asyncio.sleep(1)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 60, in websocket_slydata
+    await manager.handle_sly_data_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 181, in handle_sly_data_websocket
+    await asyncio.sleep(3)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 60, in websocket_slydata
+    await manager.handle_sly_data_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 181, in handle_sly_data_websocket
+    await asyncio.sleep(3)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 75, in websocket_sustainability
+    await service.handle_websocket(websocket, agent_name, session_id)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\trust\rai_service.py", line 193, in handle_websocket
+    await asyncio.sleep(1)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 706, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 677, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 2056, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 80, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\server.py", line 340, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 167, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\protocols\websockets\websockets_sansio_impl.py", line 409, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1791, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1780, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 2789, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 1802, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\routing.py", line 354, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 184, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 181, in app
+    await func(session)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\fastapi\routing.py", line 796, in app
+    await dependant.call(**solved_result.values)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\api\v1\fast_websocket.py", line 53, in websocket_logs
+    await manager.handle_log_websocket(websocket)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\backend\utils\logutils\websocket_logs_manager.py", line 166, in handle_log_websocket
+    await asyncio.sleep(2)
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\tasks.py", line 704, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+INFO:     Stopping reloader process [10548]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy']
+INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+INFO:     Started reloader process [21864] using StatReload
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-07 04:55:25 - root - INFO - frontend_dist_path: C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+2026-09-07 04:55:25 - root - INFO - Serving frontend from: C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+INFO:     Started server process [12804]
+INFO:     Waiting for application startup.
+2026-09-07 04:55:25 - root - INFO - FastAPI is starting up...
+2026-09-07 04:55:25 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-07 04:55:25 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-07 04:55:25 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-07 04:55:25 - root - INFO - Local database 'nss_local.db' initialized
+INFO:     Application startup complete.

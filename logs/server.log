@@ -4666,3 +4666,262 @@ GIL state at server startup:  standard CPython build (GIL always enabled). CPyth
 {"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-06T16:47:45.373159", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
 {"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-06T16:47:45.374474", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
 {"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-06T16:47:45.374789", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=3396)
+[ProcessLogBridgePlugin] Initialized (PID=3396)
+Parse error in registry item neuro_companion_smoked.hocon. Skipping. - 
+The agent named "memory_get_person" appears to have a duplicate entry in its hocon file for neuro_companion_smoked.
+Agent names must be unique within the scope of a single hocon file.
+
+Some things to try:
+1. Rename one of the agents named "memory_get_person". Don't forget to scrutinize all the
+   tools references from other agents connecting to it.
+2. If one definition is an alternate implementation, consider commenting out
+   one of them with "#"-style comments.  (Yes, you can do that in a hocon file).
+
+manifest registry neuro_companion_smoked.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+Parse error in registry item neuro_companion.hocon. Skipping. - 
+The agent named "memory_get_person" appears to have a duplicate entry in its hocon file for neuro_companion.
+Agent names must be unique within the scope of a single hocon file.
+
+Some things to try:
+1. Rename one of the agents named "memory_get_person". Don't forget to scrutinize all the
+   tools references from other agents connecting to it.
+2. If one definition is an alternate implementation, consider commenting out
+   one of them with "#"-style comments.  (Yes, you can do that in a hocon file).
+
+manifest registry neuro_companion.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon restored in 32.18 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.361346", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent neuro_companion_phase3 to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.392273", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_phase3 (78288 bytes): 2060298435920", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.392479", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent neuro_companion_phase2 to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.392588", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_phase2 (14585 bytes): 2060298434896", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.393212", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.393428", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26433 bytes): 2060299089104", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394059", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394160", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44925 bytes): 2060298660624", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394232", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394297", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 2060298696224", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394414", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.394845", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7962 bytes): 2060299348144", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395192", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395288", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25750 bytes): 2060298127296", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395354", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395414", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12855 bytes): 2060297550256", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395467", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395525", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31191 bytes): 2060299075664", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395571", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395619", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25489 bytes): 2060299343888", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.395666", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=3396)", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.491423", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513381", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513536", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 918082 requests", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513608", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513675", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513740", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.513808", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.542793", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.550395", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.571843", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.572417", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.579503", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.602452", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-07T04:44:52.607273", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.081737", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.088684", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.091563", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.101275", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 3525.38ms", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.114449", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:15.114774", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.345893", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.346258", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.346931", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.347605", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 7.08ms", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.348546", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.350340", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.410512", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.410721", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.414241", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.414878", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 7.57ms", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.415876", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.416010", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.440338", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] 200 GET /api/v1/list (::1) 33.20ms", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.471200", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:50:19.471390", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\sarve\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 51, in on_modified
+    self.handle_event(RegistryChangeHandler.MODIFIED, event.src_path)
+  File "C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('modified', 'C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\neuro_companion_phase3.hocon')
+{"message": "Observed events: modified 1, added 0, deleted 0", "user_id": "None", "Timestamp": "2026-09-07T04:50:47.686707", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Updating manifest file: ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-07T04:50:47.686917", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:50:58.886129", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] 200 GET /api/v1/list (::1) 3.76ms", "user_id": "None", "Timestamp": "2026-09-07T04:50:58.887326", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:50:58.887462", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Start neuro_companion_phase2/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.430100", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Received a neuro_companion_phase2.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.431150", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Agent network 'neuro_companion_phase2' (ID: 2060298434896) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.431372", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase2.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.431707", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase2/connectivity (::1) 10667.17ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.432361", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Finish neuro_companion_phase2/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:12.432464", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+Parse error in registry item neuro_companion_smoked.hocon. Skipping. - 
+The agent named "memory_get_person" appears to have a duplicate entry in its hocon file for neuro_companion_smoked.
+Agent names must be unique within the scope of a single hocon file.
+
+Some things to try:
+1. Rename one of the agents named "memory_get_person". Don't forget to scrutinize all the
+   tools references from other agents connecting to it.
+2. If one definition is an alternate implementation, consider commenting out
+   one of them with "#"-style comments.  (Yes, you can do that in a hocon file).
+
+manifest registry neuro_companion_smoked.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+Parse error in registry item neuro_companion.hocon. Skipping. - 
+The agent named "memory_get_person" appears to have a duplicate entry in its hocon file for neuro_companion.
+Agent names must be unique within the scope of a single hocon file.
+
+Some things to try:
+1. Rename one of the agents named "memory_get_person". Don't forget to scrutinize all the
+   tools references from other agents connecting to it.
+2. If one definition is an alternate implementation, consider commenting out
+   one of them with "#"-style comments.  (Yes, you can do that in a hocon file).
+
+manifest registry neuro_companion.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.353422", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.353853", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2060298660624) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.353976", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.354183", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 5802.38ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.354702", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.354822", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.366167", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.366328", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.366421", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.367119", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 3.04ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.367651", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.367760", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Start neuro_companion_phase2/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601013", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Received a neuro_companion_phase2.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601177", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Agent network 'neuro_companion_phase2' (ID: 2060298434896) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601261", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase2.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601417", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase2/connectivity (::1) 2.46ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601855", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] Finish neuro_companion_phase2/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:18.601963", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.768886", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.769157", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.769291", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.769819", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 64.58ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.811559", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:19.811736", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.280729", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.280921", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.281011", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.281406", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 4.59ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.281986", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:20.282087", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] Start neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.030076", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "Received a neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.030284", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "Agent network 'neuro_companion_phase3' (ID: 2060298435920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.030388", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with neuro_companion_phase3.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.030812", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] 200 GET /api/v1/neuro_companion_phase3/connectivity (::1) 4.68ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.031383", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] Finish neuro_companion_phase3/connectivity", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.031491", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.325925", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "[0] 200 GET /api/v1/list (::1) 6.05ms", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.326906", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T04:51:21.327066", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon restored in 36.22 seconds.", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.907124", "source": "HttpServer", "message_type": "Warning", "request_id": "None"}
+{"message": "Reset service for modified agent neuro_companion_phase3", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.907813", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent neuro_companion_phase3 (78288 bytes): 2060301190320", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908156", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent neuro_companion_phase2", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908329", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent neuro_companion_phase2 (14585 bytes): 2060305233920", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908468", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent agent_network_designer", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908615", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_designer (26433 bytes): 2060298366288", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908720", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent agent_network_test_generator", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908806", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_test_generator (44925 bytes): 2060304223312", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908891", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent basic/music_nerd", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.908968", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent basic/music_nerd (4644 bytes): 2060298365808", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909037", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent agent_network_query_generator", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909127", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_query_generator (7962 bytes): 2060302506576", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909198", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent experimental/cruse_theme_agent", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909271", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_theme_agent (25750 bytes): 2060304221968", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909341", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent experimental/cruse_widget_agent", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909411", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_widget_agent (12855 bytes): 2060276572144", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909477", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent agent_network_editor", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909546", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_editor (31191 bytes): 2060298163984", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909615", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Reset service for modified agent agent_network_instructions_editor", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.909690", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_instructions_editor (25489 bytes): 2060299531024", "user_id": "None", "Timestamp": "2026-09-07T04:51:23.914159", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=22396)
+[ProcessLogBridgePlugin] Initialized (PID=22396)
+manifest registry neuro_companion_smoked.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+manifest registry neuro_companion.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+manifest registry neuro_companion_phase2.hocon not found in C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon
+Manifest file C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries\manifest.hocon restored in 38.07 seconds.
+Reading C:\Users\sarve\OneDrive\Desktop\CogniAssure\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.6.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.590233", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.597465", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44925 bytes): 1760490089232", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.597840", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.597996", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26433 bytes): 1760490517072", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598087", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent neuro_companion_phase3 to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598157", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent neuro_companion_phase3 (78312 bytes): 1760489863504", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598208", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598262", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4644 bytes): 1760490124832", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598312", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598377", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25750 bytes): 1760489555904", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598428", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598480", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31191 bytes): 1760490504272", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598532", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598589", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7962 bytes): 1760490776752", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598650", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598708", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25489 bytes): 1760490772496", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598757", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.598807", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12855 bytes): 1760488962480", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.599702", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=22396)", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.615320", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.629588", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.629818", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 1098026 requests", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.629999", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.630091", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.630167", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.632645", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\Users\sarve\OneDrive\Desktop\CogniAssure - Copy\registries for manifest ['C:\\Users\\sarve\\OneDrive\\Desktop\\CogniAssure - Copy\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.648276", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.653412", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.683395", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.684027", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.693939", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.704471", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-07T04:55:48.705606", "source": "HttpServer", "message_type": "Other", "request_id": "None"}

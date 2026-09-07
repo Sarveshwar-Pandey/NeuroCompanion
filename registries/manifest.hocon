@@ -49,19 +49,6 @@
         "serve": true,
         "public": false
     },
-    "neuro_companion_smoked.hocon": {
-    "serve": true,
-    "public": true
-    },
-    "neuro_companion.hocon": {
-    "serve": true,
-    "public": true
-    },
-    
-    "neuro_companion_phase2.hocon": {
-    "serve": true,
-    "public": true
-    },
     "neuro_companion_phase3.hocon": {
     "serve": true,
     "public": true

@@ -59,6 +59,28 @@ class RoutineService:
         finally:
             session.close()
 
+    def get_pending_reminders(self, user_id: int) -> list[dict]:
+
+        session = SessionLocal()
+
+        try:
+            repository = RoutineRepository(session)
+
+            reminders = repository.get_pending_reminders(user_id)
+
+            return [
+                {
+                    "id": reminder.id,
+                    "title": reminder.title,
+                    "remind_at": reminder.remind_at.isoformat(),
+                    "status": reminder.status,
+                }
+                for reminder in reminders
+            ]
+
+        finally:
+            session.close()
+
     def create_reminder(
         self,
         user_id: int,

@@ -289,3 +289,35 @@ class CaregiverService:
 
         finally:
             session.close()
+
+    def get_notifications(
+        self,
+        patient_user_id: int,
+        limit: int = 50,
+    ) -> list[dict]:
+        session = SessionLocal()
+
+        try:
+            repository = CaregiverRepository(session)
+
+            notifications = repository.get_notifications(
+                patient_user_id=patient_user_id,
+                limit=limit,
+            )
+
+            return [
+                {
+                    "notification_id": notification.id,
+                    "caregiver_id": notification.caregiver_id,
+                    "notification_type": notification.notification_type,
+                    "title": notification.title,
+                    "message": notification.message,
+                    "priority": notification.priority,
+                    "status": notification.status,
+                    "created_at": notification.created_at.isoformat(),
+                }
+                for notification in notifications
+            ]
+
+        finally:
+            session.close()
